@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to use Roboto font */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar img {
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.navbar a {
+    float: right;
+    color: black;
+    text-align: center;
+    font-size: larger;
+    padding: 14px 20px;
+    text-decoration: none;
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    clear: both; /* Clear floats */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+}
+
+.form-group::after {
+    content: ""; /* Clearfix for container */
+    display: table;
+    clear: both;
+}
+
+.form-group select, .form-group input[type="number"] {
+    width: calc(95% - 12px); /* Adjust width based on container size */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    float: left; /* Float inputs to the left */
+}
+
+.form-group select:last-child, .form-group input[type="number"]:last-child {
+    margin-right: 0; /* Remove right margin from the last input */
+}
+
+.form-group input[type="submit"] {
+    background-color: #ffe082;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block; /* Ensure button takes full width */
+    clear: both; /* Clear floats */
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #ffe082;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+}

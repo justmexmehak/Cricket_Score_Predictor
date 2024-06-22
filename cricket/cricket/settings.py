@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-60&m#++toqwmz2+!1alpw34qk$4c+8zw#q-te6@)i=8p(osw@h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '7643-39-39-106-0.ngrok-free.app',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -37,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'score_predictor.apps.Score_predictor'
+    'score_predictor.apps.ScorePredictorConfig'
 ]
 
 MIDDLEWARE = [
